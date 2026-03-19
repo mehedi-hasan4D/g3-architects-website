@@ -24,6 +24,9 @@
 .text-light-gray{
     color: #727272;
 }
+.text-primary{
+    color:#FF900E ;
+}
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -42,7 +45,7 @@ main >section{
 }
 
 /* Header styles */
-.brand,.features-title{
+.brand,.section-title{
     font-weight: bold;
     font-size: 3rem;
     
@@ -102,11 +105,28 @@ main >section{
 .our-features{
  
 }
+.Quick-list{
+    font-weight: 500;
+}
+.of-Our{
+    font-weight: bold;
+}
+
 
 /* responsive related styles */
 @media screen and (max-width:576px) {
-    .navbar,.nav-links{
+    .navbar,.nav-links,.teams{
     flex-direction: column;
+}
+.team-img-container{
+    grid-template-columns: repeat(1,1fr);
 }
 }
 
+/* medium device styles */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    
+}
