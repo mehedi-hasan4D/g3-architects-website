@@ -114,6 +114,47 @@ main{
 .of-Our{
     font-weight: bold;
 }
+
+/* features related styles */
+.feature{
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 140px;
+    margin-top: 100px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+#experience-badge{
+    padding: 45px 40px;
+    margin-left: -90px;
+    margin-top: -120px;
+}
+#experience-year{
+    font-weight: bold;
+    font-size: 4rem;
+
+}
+.experience{
+    font-weight: 500;
+    font-size: 1.50rem;
+}
+
+
 /* Facts Related Styles */
 
 .facts-container{
@@ -163,26 +204,28 @@ main{
 footer{
     max-width: 1440px;
     margin: 0 auto;
-    height: 100px;
+    padding: 20px 0;
+    text-align: center;
     margin-top: 50px;
+
+    
     
 }
 .footer-description{
     font-weight: 400;
     font-size: 1.25rem;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+
 }
 
 
 /* responsive related styles */
 
 @media screen and (max-width:576px) {
-    .navbar,.nav-links,.teams{
+    .navbar,.nav-links,.teams,.feature{
     flex-direction: column;
 }
-.team-img-container,.facts-container{
+.team-img-container,
+.facts-container{
     grid-template-columns: repeat(1,1fr);
 }
 .facts-container{
@@ -197,11 +240,18 @@ footer{
 .our-features{
     margin-left: 20px;
 }
+#experience-badge{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.feature-experience-img{
+    width: 100%;
+}
 }
 
 /* medium device styles */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams,.feature{
         flex-direction: column;
     }
     .our-featurs{
@@ -212,5 +262,9 @@ footer{
         gap: 50px;
         justify-items: center;
     }
+#experience-badge{
+    margin-left: 20px;
+    margin-top: 20px;
+}
     
 }
